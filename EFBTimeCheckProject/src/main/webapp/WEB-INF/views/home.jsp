@@ -4,12 +4,32 @@
 <html>
 <head>
 	<title>Home</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<style type="text/css">
+	#mvBtn{
+		border: 0;
+		background: #000000ab;
+		color: white;
+		outline: 0;
+	}
+	#mvBtn:hover{
+		cursor: pointer;
+	}
+	</style>
 </head>
 <body>
 <h1>
-	Hello world!  .
+	ETimeCheckWeb
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P>  현재 시간 : ${serverTime}. </P>
+
+<input id="mvBtn" type="button" value="이동하기">
+
+<script type="text/javascript">
+	$('#mvBtn').click(function(){
+		location.href="goTCPage.tc"
+	});
+</script>
 </body>
 </html>
